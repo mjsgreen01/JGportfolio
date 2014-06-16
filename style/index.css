@@ -159,15 +159,25 @@ body{
 	display: inline-block;
 }
 .designPreviews{
-	width: 5850px;
+	width: 5860px;
 	margin-top: 93px;
 }
 .scrollArrows{
-	height: 200px;
+	height: 180px;
 	display: inline-block;
-	width: 90px;
-	border: 1px solid white;
+	width: 100px;
+	margin-bottom: 90px;
 }
+.leftDesignArrow{
+	background-image: url('leftArrow.png');
+	border-right: 1px solid white;
+}
+.rightDesignArrow{
+	background-image: url('rightArrow.png');
+	border-left: 1px solid white;
+}
+
+
 
 
 /*Animates jquery addClass transitions*/
@@ -211,18 +221,9 @@ body{
 	margin-left: -44px;
 	margin-top: -57px;
 }
-/*.designPreviewsClicked{
-	margin-top: -47px;
-}*/
 .designPreviewsContainerClicked{
 	height: 530px;
 }
-
-
-
-
-
-
 
 
 
@@ -287,10 +288,24 @@ body{
 .wrgwWrapper:nth-child(20) div{
 	background-image: url('7.jpg');
 }
+.wrgwWrapper:nth-child(21) div{
+	background-image: url('8.jpg');
+}
+.wrgwWrapper:nth-child(22) div{
+	background-image: url('9.jpg');
+}
 
 
 
 
+
+.websitesHeader{
+	width: 315px;
+	margin: 0 auto;
+}
+.siteContainer{
+	display: inline-block;
+}
 
 
 
