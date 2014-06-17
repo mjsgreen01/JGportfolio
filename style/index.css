@@ -302,12 +302,62 @@ body{
 .websitesHeader{
 	width: 315px;
 	margin: 0 auto;
+	margin-top: 70px;
+}
+.websitesPreviews{
+	margin-top: 40px;
 }
 .siteContainer{
 	display: inline-block;
+	width: 370px;
 }
-
-
+.websitesWrapper{
+	border: 1px solid white;
+	border-radius: 100%;
+	width: 230px;
+	height: 230px;
+	margin-top: 50px;
+	display: inline-block;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform .3s ease-out; 
+    -moz-transition: -moz-transform .3s ease-out; 
+    -o-transition: -o-transform .3s ease-out; 
+    transition: transform .3s ease-out; 
+}
+.websitesWrapper:hover{
+	-moz-transform: scale(1.2);
+   -webkit-transform: scale(1.2);
+   -o-transform: scale(1.2);
+   transform: scale(1.2);
+}
+.websitesWrapper div{
+	background-size: 113%;
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: -6px;
+	width: 270px;
+	height: 270px;
+	margin-left: -20px;
+	-webkit-transition: -webkit-transform .3s ease-out; 
+    -moz-transition: -moz-transform .3s ease-out; 
+    -o-transition: -o-transform .3s ease-out; 
+    transition: transform .3s ease-out; 
+}
+/*.websitesWrapper div:hover{
+	-moz-transform: scale(.8);
+   -webkit-transform: scale(.8);
+   -o-transform: scale(.8);
+   transform: scale(.8);
+}*/
+.siteContainer:nth-child(1) .websitesWrapper div{
+	background-image: url('immigrants2.png');
+}
+.siteContainer:nth-child(2) .websitesWrapper div{
+	background-image: url('dmj.png');
+}
+.siteContainer:nth-child(3) .websitesWrapper div{
+	background-image: url('dee.png');
+}
 
 
 
