@@ -67,7 +67,7 @@ body{
 	overflow: hidden;
 }
 .section1Container{
-	width: 850px;
+	width: 800px;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 265px;
@@ -79,10 +79,16 @@ body{
 	margin-bottom: 16px;
 	letter-spacing: 13px;
 }
+.section1Title span:nth-child(2){
+	letter-spacing: 0px;
+}
 .section1SubTitle{
 	font-size: 28px;
 	letter-spacing: 4px;
 	font-weight: 400;
+}
+.section1SubTitle br{
+	display: none;
 }
 .section2{
 	width: 100%;
@@ -399,8 +405,57 @@ body{
 
 
 
-
-
-
+@media screen and (max-width: 800px){
+	.section1Container{
+		width: 580px;
+	}
+	.section1Title{
+		font-size: 65px;
+		margin-bottom: 14px;
+	}
+	.section1SubTitle{
+		font-size: 21px;
+		letter-spacing: 3.5px;
+	}
+}
+@media screen and (max-width: 580px){
+	.section1Container{
+		width: 440px;
+	}
+	.section1Title{
+		font-size: 45px;
+		margin-bottom: 12px;
+		letter-spacing: 12px;
+	}
+	.section1SubTitle{
+		font-size: 16px;
+		letter-spacing: 3px;
+	}
+}
+@media screen and (max-width: 580px){
+	.section1Container{
+		width: 330px;
+	}
+	.section1Title{
+		font-size: 73px;
+		margin-bottom: 12px;
+		letter-spacing: 9px;
+		line-height: 77px;
+	}
+	.section1Title span:nth-child(1){
+		letter-spacing: 0px;
+	}
+	.section1SubTitle{
+		font-size: 16px;
+		letter-spacing: 3px;
+		line-height: 1.4;
+	}
+	.section1SubTitle br{
+		display: inline;
+	}
+	.section1SubTitle span{
+		display: none;
+	}
+}
 
 
