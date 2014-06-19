@@ -405,6 +405,17 @@ body{
 
 
 
+
+@media screen and (max-width: 1130px){
+	.section2{
+		height: 2010px;
+	}
+}
+@media screen and (max-width: 967px){
+	.designPreviewsContainer{
+		width: 72%;
+	}
+}
 @media screen and (max-width: 800px){
 	.section1Container{
 		width: 580px;
@@ -416,6 +427,29 @@ body{
 	.section1SubTitle{
 		font-size: 21px;
 		letter-spacing: 3.5px;
+	}
+	.designPreviewsContainer{
+		width: 62%;
+	}
+	.websitesHeader{
+		margin-top: 225px;
+	}
+	.section2{
+		height: 1960px;
+	}
+}
+@media screen and (max-width: 753px){
+	.section2{
+		height: 2410px;
+	}
+	.websitesWrapper{
+		margin-top: 25px;
+	}
+	.siteContainer{
+		margin-top: 70px;
+	}
+	.websitesPreviews{
+		margin-top: 30px;
 	}
 }
 @media screen and (max-width: 580px){
@@ -431,8 +465,28 @@ body{
 		font-size: 16px;
 		letter-spacing: 3px;
 	}
+	.section2Title{
+		font-size: 55px;
+	}
+	.designHeader{
+		font-size: 21px;
+		margin-top: 120px;
+		line-height: 29px;
+	}
+	.scrollArrows{
+		width: 51px
+	}
+	.rightDesignArrow{
+		background-position-x: -51px;
+	}
+	.designPreviewsContainer{
+		width: 73%;
+	}
+	.section2{
+		height: 2150px;
+	}
 }
-@media screen and (max-width: 580px){
+@media screen and (max-width: 440px){
 	.section1Container{
 		width: 330px;
 	}
@@ -455,6 +509,9 @@ body{
 	}
 	.section1SubTitle span{
 		display: none;
+	}
+	.designPreviewsContainer{
+		width: 69%;
 	}
 }
 
