@@ -381,7 +381,7 @@ body{
 	overflow: hidden;
 }
 .section3Container{
-	width: 850px;
+	width: 400px;
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 105px;
@@ -485,6 +485,16 @@ body{
 	.section2{
 		height: 2150px;
 	}
+	.section3Container{
+		width: 290px;
+	}
+	.section3Title{
+		font-size: 55px;
+	}
+	.section3SubTitle{
+		font-size: 20px;
+		margin-top: 80px;
+	}
 }
 @media screen and (max-width: 440px){
 	.section1Container{
@@ -512,6 +522,12 @@ body{
 	}
 	.designPreviewsContainer{
 		width: 69%;
+	}
+	.section2Title{
+		font-size: 46px;
+	}
+	.designHeader{
+		font-size: 19px;
 	}
 }
 
