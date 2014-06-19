@@ -521,13 +521,16 @@ body{
 		display: none;
 	}
 	.designPreviewsContainer{
-		width: 69%;
+		width: 64%;
 	}
 	.section2Title{
 		font-size: 46px;
 	}
 	.designHeader{
 		font-size: 19px;
+	}
+	.siteContainer{
+		width: 310px;
 	}
 }
 
