@@ -123,10 +123,7 @@ body{
 	display: inline-block;
 	margin-right: 90px;	
 	overflow: hidden;
-	-webkit-transition: -webkit-transform .3s ease-out; 
-    -moz-transition: -moz-transform .3s ease-out; 
-    -o-transition: -o-transform .3s ease-out; 
-    transition: transform .3s ease-out; 
+
 }
 .wrgwWrapper:hover{
 	-moz-transform: scale(1.8);
@@ -143,10 +140,6 @@ body{
 	height: 270px;
 	margin-left: -50px;
 	margin-top: -50px;
-	-webkit-transition: -webkit-transform .3s ease-out; 
-    -moz-transition: -moz-transform .3s ease-out; 
-    -o-transition: -o-transform .3s ease-out; 
-    transition: transform .3s ease-out; 
 }
 .wrgwWrapper div:hover{
 	-moz-transform: scale(.8);
@@ -230,6 +223,9 @@ body{
 .designPreviewsContainerClicked{
 	height: 530px;
 }
+
+
+
 
 
 
