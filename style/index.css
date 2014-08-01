@@ -369,6 +369,7 @@ body{
 }
 .siteContainer:nth-child(4) .websitesWrapper div{
 	background-image: url('37tons.png');
+	background-position-y: -23px;
 }
 
 .websitesText{
@@ -407,6 +408,16 @@ body{
 	line-height: 33px;
 	letter-spacing: .5px;
 }
+.gitLogo{
+	width: 60px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.gitLogo img{
+	width: 100%;
+}
+
+
 
 
 
