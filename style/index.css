@@ -139,8 +139,7 @@ body{
 .wrgwWrapper div{
 	background-size: 245px;
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: -80px;
+	background-position: center -80px;
 	width: 212px;
 	height: 212px;
 	margin-left: -21px;
@@ -219,8 +218,7 @@ body{
 .wrgwWrapperClicked div {
 	background-size: 227px;
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: 0px;
+	background-position: center 0px;
 	width: 269px;
 	height: 560px;
 	margin-left: -43.9px;
@@ -346,8 +344,7 @@ body{
 .websitesWrapper div{
 	background-size: 310px;
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: -6px;
+	background-position: center -6px;
 	width: 230px;
 	height: 230px;
 	margin-left: 0px;
@@ -379,7 +376,7 @@ body{
 }
 .siteContainer:nth-child(4) .websitesWrapper div{
 	background-image: url('37tons.png');
-	background-position-y: -23px;
+	background-position: center -23px;
 }
 
 .websitesText{
@@ -630,7 +627,7 @@ to be equal to section 2, largest section of the three, and start it off on the 
 		width: 51px
 	}
 	.rightDesignArrow{
-		background-position-x: -51px;
+		background-position: -51px 0px;
 	}
 	.designPreviewsContainer{
 		width: 73%;
