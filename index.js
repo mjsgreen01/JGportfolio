@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+if ($(window).width()>800) {
 
 	//3D transform control using scrolling
 	var winHeight = $(window).height();
@@ -57,7 +57,7 @@ $(document).ready(function(){
 	});
 	//rotate to section 3 from section 2
 	$('.section2').scroll(function () {
-		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()>(1450)) ) {
+		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()>(1520)) ) {
 
 			$('.bodySubContain').removeClass('bodySub2');
 			$('.bodySubContain').addClass('bodySub3');
@@ -89,7 +89,7 @@ $(document).ready(function(){
 	// });
 
 
-
+};
 
 
 	var amount = '';
