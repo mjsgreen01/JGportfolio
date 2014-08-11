@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-if ($(window).width()>800) {
+
+
+if ($(window).width()>800) {  //disables 3D transform on window width<800px
 
 	//3D transform control using scrolling
 	var winHeight = $(window).height();
@@ -14,6 +16,7 @@ if ($(window).width()>800) {
 	var tranZ = (winHeight/2);
 	var negTranZ = -tranZ;
 
+	//assign initial 3D transform values
 	$(".bodySub1").css({transform: 'rotateX(0deg) translateZ('+negTranZ+'px)'});
 	$(".section1").css({transform: 'rotateX(0deg) translateZ('+tranZ+'px)'});
 	$(".section2").css({transform: 'rotateX(-90deg) translateZ('+tranZ+'px)'});
@@ -23,7 +26,7 @@ if ($(window).width()>800) {
 	// $(".bodySub2").css({transform: 'translateZ('+negTranZ+'px) rotateX(90deg) !important'});
 	// $(".bodySub3").css({transform: 'translateZ('+negTranZ+'px) rotateX(-180deg)'});
 
-
+	//window scroll controls transform from section 1 & 3, but not 2
 	$(window).scroll(function () {
 		//rotate to section 2 from section 1
 		if (($(window).scrollTop()==2) && ($('.bodySubContain').hasClass('onSec1')) ) {
@@ -35,14 +38,7 @@ if ($(window).width()>800) {
 			$('.bodySubContain').removeClass('onSec1');
 			
 		};
-		//rotate to section 1 from section 2
-		// if(($('.bodySubContain').hasClass('bodySub2')) && ($(window).scrollTop()==0) ) {
-		// 	$('.bodySubContain').removeClass('bodySub2');
-		// 	$('.bodySubContain').addClass('bodySub1');
-		// 	$(".bodySub1").css({transform: 'rotateX(0deg) translateZ('+negTranZ+'px)'});
-		// 	$('.bodySubContain').addClass('onSec1');
-		// 	$('.bodySubContain').removeClass('onSec2');
-		// };
+		
 		//rotate to section 2 from section 3
 		if(($('.bodySubContain').hasClass('onSec3')) && ($(window).scrollTop()==0) ) {
 			$('.section2').scrollTop(1110);
@@ -55,8 +51,10 @@ if ($(window).width()>800) {
 
 
 	});
-	//rotate to section 3 from section 2
+	
+	//section2 scroll (overflow:scroll) controls transform from section 2 to section 1 & 3
 	$('.section2').scroll(function () {
+		//rotate to section 3 from section 2
 		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()>(1520)) ) {
 
 			$('.bodySubContain').removeClass('bodySub2');
@@ -75,26 +73,13 @@ if ($(window).width()>800) {
 			$('.bodySubContain').removeClass('onSec2');
 		};
 		// console.log($('.websitesContainer').position().top);
-		console.log($('.section2').scrollTop());
+		// console.log($('.section2').scrollTop());
 	});
 
-
-
-	// $(window).scroll(function () {
-	// 	if (($('.bodySubContain').hasClass('bodySub2')) && ($('.section2').scrollTop()==2) ) {
-	// 		// if ($('.section2').scrollTop()==2) {
-	// 			$('.bodySubContain').removeClass('bodySub2');
-	// 		// };
-	// 	};
-	// });
-
-
-};
-
-
+//functionality for design preview scroller
 	var amount = '';
 
-	function scrollForward() {
+	var scrollForward =function() {
 	    if($('.designPreviewsContainer').scrollLeft()<'3455'){
 	    $('.designPreviewsContainer').animate({
 	        scrollLeft: amount
@@ -107,7 +92,7 @@ if ($(window).width()>800) {
 	        scrollForward();}
 	}
 
-	function scrollBack() {
+	var scrollBack =function() {
 	    
 	    if($('.designPreviewsContainer').scrollLeft()>'0'){
 	    $('.designPreviewsContainer').animate({
@@ -136,27 +121,80 @@ if ($(window).width()>800) {
 	}, function() {
 	    amount = '';
 	});
+};
+
+
+
+	
+
+	
 
 
 
 
 
+//make wrgw preview scroll on click instead of hover for mobile devices
+if ($(window).width()<=800) {
+	var amount = '';
+//center the first image preview
+	$('.designPreviewsContainer').scrollLeft(250);
+
+	var scrollForward = function() {
+	    if($('.designPreviewsContainer').scrollLeft()<'3455'){
+	    $('.designPreviewsContainer').animate({
+	        scrollLeft: amount
+	    }, 300, 'linear');}
+	    else{$('.designPreviewsContainer').scrollLeft(0);
+	        scrollForward();}
+	}
+
+	var scrollBack = function() {
+	    
+	    if($('.designPreviewsContainer').scrollLeft()>'0'){
+	    $('.designPreviewsContainer').animate({
+	        scrollLeft: amount
+	    }, 300, 'linear');}
+	    else{$('.designPreviewsContainer').scrollLeft(3455);
+	        scrollBack();}
+	}
 
 
+
+
+	$('.rightDesignArrow').click(function() {
+	    amount = '+=266';
+	    scrollForward();
+	});
+
+	$('.leftDesignArrow').click(function() {
+	    amount = '-=266';
+	    scrollBack();
+	});
+};
+
+
+
+
+
+	//full-view preview of design posters
 	$(".wrgwWrapper").on({click:function(){    
     	if($(this).hasClass('wrgwWrapperClicked')){
     		$(this).removeClass('wrgwWrapperClicked');
     		$('.designPreviews').removeClass('designPreviewsClicked');
     		$('.designPreviewsContainer').removeClass('designPreviewsContainerClicked');
-    		var scrolled = $('.designPreviewsContainer').scrollLeft();
-			$('.designPreviewsContainer').scrollLeft(scrolled);
+    		if ($(window).width()<800) {
+	    		var scrolled = $('.designPreviewsContainer').scrollLeft();
+				$('.designPreviewsContainer').scrollLeft(scrolled-120);
+			}
     	}
     	else{
     		$(this).addClass('wrgwWrapperClicked');
     		$('.designPreviews').addClass('designPreviewsClicked');
     		$('.designPreviewsContainer').addClass('designPreviewsContainerClicked');
+    		if ($(window).width()<800) {
     		var scrolled = $('.designPreviewsContainer').scrollLeft();
-			$('.designPreviewsContainer').scrollLeft(scrolled);    		
+			$('.designPreviewsContainer').scrollLeft(scrolled+120);    	
+			}	
     	}
 
 		},
@@ -165,8 +203,10 @@ if ($(window).width()>800) {
 	    		$(this).removeClass('wrgwWrapperClicked');
 	    		$('.designPreviews').removeClass('designPreviewsClicked');
 	    		$('.designPreviewsContainer').removeClass('designPreviewsContainerClicked');
+	    		if ($(window).width()<800) {
 	    		var scrolled = $('.designPreviewsContainer').scrollLeft();
-				$('.designPreviewsContainer').scrollLeft(scrolled);
+				$('.designPreviewsContainer').scrollLeft(scrolled-120);
+				}
 	    	}
 		}
 	});

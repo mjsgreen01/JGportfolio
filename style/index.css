@@ -205,7 +205,8 @@ body{
 }
 
 
-/*When clicked, these styles are added with Jquery*/
+/* When clicked, these styles are added with Jquery*/
+
 .wrgwWrapperClicked{
 	border-radius: 0;
 	width: 182px;
@@ -221,7 +222,7 @@ body{
 	background-position: center 0px;
 	width: 269px;
 	height: 560px;
-	margin-left: -43.9px;
+	margin-left: -43.64px;
 	margin-top: -56px;
 	border-radius: 0%;
 }
@@ -586,6 +587,40 @@ to be equal to section 2, largest section of the three, and start it off on the 
 	}
 	.section2{
 		height: 1960px;
+	}
+	.wrgwWrapper:hover{
+		-moz-transform: scale(1);
+	   -webkit-transform: scale(1);
+	   -o-transform: scale(1);
+	   transform: scale(1);
+	      -webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+	.wrgwWrapper div:hover{
+		-moz-transform: scale(1);
+	   -webkit-transform: scale(1);
+	   -o-transform: scale(1);
+	   transform: scale(1);
+	}
+	.wrgwWrapperClicked{
+		border-radius: 0;
+		width: 224px;
+		height: 350px;
+		display: inline-block;
+		margin-right: 90px;
+		overflow: hidden;
+		margin-top: 31px;
+	}
+	.wrgwWrapperClicked div {
+		background-size: 227px;
+		background-repeat: no-repeat;
+		background-position: center 0px;
+		width: 269px;
+		height: 560px;
+		margin-left: -23.9px;
+		margin-top: 0px;
+		border-radius: 0%;
 	}
 }
 @media screen and (max-width: 753px){
