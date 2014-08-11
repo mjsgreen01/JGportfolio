@@ -137,7 +137,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 if ($(window).width()<=800) {
 	var amount = '';
 //center the first image preview
-	$('.designPreviewsContainer').scrollLeft(250);
+	$('.designPreviewsContainer').scrollLeft(245);
 
 	var scrollForward = function() {
 	    if($('.designPreviewsContainer').scrollLeft()<'3455'){
@@ -154,7 +154,7 @@ if ($(window).width()<=800) {
 	    $('.designPreviewsContainer').animate({
 	        scrollLeft: amount
 	    }, 300, 'linear');}
-	    else{$('.designPreviewsContainer').scrollLeft(3455);
+	    else{$('.designPreviewsContainer').scrollLeft(3445);
 	        scrollBack();}
 	}
 
@@ -163,11 +163,29 @@ if ($(window).width()<=800) {
 
 	$('.rightDesignArrow').click(function() {
 	    amount = '+=266';
-	    scrollForward();
+	    if($('.designPreviews').hasClass('designPreviewsClicked')){
+		    $('.wrgwWrapper').removeClass('wrgwWrapperClicked');
+			$('.designPreviews').removeClass('designPreviewsClicked');
+			$('.designPreviewsContainer').removeClass('designPreviewsContainerClicked');
+			if ($(window).width()<800) {
+			var scrolled = $('.designPreviewsContainer').scrollLeft();
+			$('.designPreviewsContainer').scrollLeft(scrolled-120);
+			}
+		}
+		scrollForward();
 	});
 
 	$('.leftDesignArrow').click(function() {
 	    amount = '-=266';
+	    if($('.designPreviews').hasClass('designPreviewsClicked')){
+		    $('.wrgwWrapper').removeClass('wrgwWrapperClicked');
+			$('.designPreviews').removeClass('designPreviewsClicked');
+			$('.designPreviewsContainer').removeClass('designPreviewsContainerClicked');
+			if ($(window).width()<800) {
+			var scrolled = $('.designPreviewsContainer').scrollLeft();
+			$('.designPreviewsContainer').scrollLeft(scrolled-120);
+			}
+		}
 	    scrollBack();
 	});
 };
@@ -199,7 +217,7 @@ if ($(window).width()<=800) {
 
 		},
 		mouseleave: function(){
-			if($(this).hasClass('wrgwWrapperClicked')){
+			if(($(this).hasClass('wrgwWrapperClicked')) && ($(window).width()>800)){
 	    		$(this).removeClass('wrgwWrapperClicked');
 	    		$('.designPreviews').removeClass('designPreviewsClicked');
 	    		$('.designPreviewsContainer').removeClass('designPreviewsContainerClicked');
