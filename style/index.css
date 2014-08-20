@@ -366,7 +366,7 @@ body{
    -o-transform: scale(.8);
    transform: scale(.8);
 }*/
-.siteContainer:nth-child(1) .websitesWrapper div{
+.siteContainer:nth-child(4) .websitesWrapper div{
 	background-image: url('immigrants.jpg');
 }
 .siteContainer:nth-child(2) .websitesWrapper div{
@@ -375,7 +375,7 @@ body{
 .siteContainer:nth-child(3) .websitesWrapper div{
 	background-image: url('dee.jpg');
 }
-.siteContainer:nth-child(4) .websitesWrapper div{
+.siteContainer:nth-child(1) .websitesWrapper div{
 	background-image: url('37tons.jpg');
 	background-position: center -23px;
 }
@@ -659,10 +659,13 @@ to be equal to section 2, largest section of the three, and start it off on the 
 		line-height: 29px;
 	}
 	.scrollArrows{
-		width: 51px
+		width: 33px;
 	}
 	.rightDesignArrow{
-		background-position: -51px 0px;
+		background-position: -59px 0px;
+	}
+	.leftDesignArrow{
+		background-position: -10px 0px;
 	}
 	.designPreviewsContainer{
 		width: 73%;
