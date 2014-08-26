@@ -429,126 +429,126 @@ body{
 @media screen and (min-width: 800px){
 
 
-.bodyContain{
-	width: 100%;
-    height: 700px;
-    position: relative;
-    cursor: default;
-    -webkit-perspective: 1000px;
-	-moz-perspective: 1000px;
-	-o-perspective: 1000px;
-	-ms-perspective: 1000px;
-    perspective: 1000px;
-    /*-moz-transform: scale(.8);
-   -webkit-transform: scale(.8);
-   -o-transform: scale(.8);
-   transform: scale(.8);*/
+	.bodyContain{
+		width: 100%;
+	    height: 700px;
+	    position: relative;
+	    cursor: default;
+	    -webkit-perspective: 1000px;
+		-moz-perspective: 1000px;
+		-o-perspective: 1000px;
+		-ms-perspective: 1000px;
+	    perspective: 1000px;
+	    /*-moz-transform: scale(.8);
+	   -webkit-transform: scale(.8);
+	   -o-transform: scale(.8);
+	   transform: scale(.8);*/
 
-}
-.bodySubContain{
-	position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.9s linear;
-	-moz-transition: all 0.9s linear;
-	-o-transition: all 0.9s linear;
-	-ms-transition: all 0.9s linear;
-	transition: all 0.9s linear;
+	}
+	.bodySubContain{
+		position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    -webkit-transition: all 0.9s linear;
+		-moz-transition: all 0.9s linear;
+		-o-transition: all 0.9s linear;
+		-ms-transition: all 0.9s linear;
+		transition: all 0.9s linear;
 
-    -webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		-ms-transform-style: preserve-3d;
+		transform-style: preserve-3d;
 
-		/*-webkit-transform: rotateX(0deg) translateZ(-350px);
--moz-transform: rotateX(0deg) translateZ(-350px);
--o-transform: rotateX(0deg) translateZ(-350px);
--ms-transform: rotateX(0deg) translateZ(-350px);
-transform: rotateX(0deg) translateZ(-350px);*/
-}
-.bodySubContain > div{
-	display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.9s linear;
-	-moz-transition: all 0.9s linear;
-	-o-transition: all 0.9s linear;
-	-ms-transition: all 0.9s linear;
-	transition: all 0.9s linear;
+			/*-webkit-transform: rotateX(0deg) translateZ(-350px);
+	-moz-transform: rotateX(0deg) translateZ(-350px);
+	-o-transform: rotateX(0deg) translateZ(-350px);
+	-ms-transform: rotateX(0deg) translateZ(-350px);
+	transform: rotateX(0deg) translateZ(-350px);*/
+	}
+	.bodySubContain > div{
+		display: block;
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    -webkit-transition: all 0.9s linear;
+		-moz-transition: all 0.9s linear;
+		-o-transition: all 0.9s linear;
+		-ms-transition: all 0.9s linear;
+		transition: all 0.9s linear;
 
-/*    -webkit-transform-origin: 50% 0%;
-	-moz-transform-origin: 50% 0%;
-	-o-transform-origin: 50% 0%;
-	-ms-transform-origin: 50% 0%;
-	transform-origin: 50% 0%;*/
+	/*    -webkit-transform-origin: 50% 0%;
+		-moz-transform-origin: 50% 0%;
+		-o-transform-origin: 50% 0%;
+		-ms-transform-origin: 50% 0%;
+		transform-origin: 50% 0%;*/
 
-}
-.section1{
-/*		-webkit-transform: rotateX(0deg) translateZ(350px);
--moz-transform: rotateX(0deg) translateZ(350px);
--o-transform: rotateX(0deg) translateZ(350px);
--ms-transform: rotateX(0deg) translateZ(350px);
-transform: rotateX(0deg) translateZ(350px);*/
+	}
+	.section1{
+	/*		-webkit-transform: rotateX(0deg) translateZ(350px);
+	-moz-transform: rotateX(0deg) translateZ(350px);
+	-o-transform: rotateX(0deg) translateZ(350px);
+	-ms-transform: rotateX(0deg) translateZ(350px);
+	transform: rotateX(0deg) translateZ(350px);*/
 
-}
-.section2{
-	overflow: scroll;
-/*	-webkit-transform: rotateX(-90deg) translateZ(350px);
--moz-transform: rotateX(-90deg) translateZ(350px);
--o-transform: rotateX(-90deg) translateZ(350px);
--ms-transform: rotateX(-90deg) translateZ(350px);
-transform: rotateX(-90deg) translateZ(350px);*/
-}
-.section3{
-/*		-webkit-transform: rotateX(180deg) translateZ(350px);
--moz-transform: rotateX(180deg) translateZ(350px);
--o-transform: rotateX(180deg) translateZ(350px);
--ms-transform: rotateX(180deg) translateZ(350px);
-transform: rotateX(180deg) translateZ(350px);*/
-}
-/*.bodyContain:hover .section1{
-	-webkit-transform: translateZ(-350px) rotateX(90deg);
--moz-transform: translateZ(-350px) rotateX(90deg);
--o-transform: translateZ(-350px) rotateX(90deg);
--ms-transform: translateZ(-350px) rotateX(90deg);
-transform: translateZ(-350px) rotateX(90deg);
-}
-.bodyContain:hover .section3{
-	-webkit-transform: translateZ(350px) rotateX(0deg);
--moz-transform: translateZ(350px) rotateX(0deg);
--o-transform: translateZ(350px) rotateX(0deg);
--ms-transform: translateZ(350px) rotateX(0deg);
-transform: translateZ(350px) rotateX(0deg);
-}*/
-
-
-
-
-.bodySub1{
-
-}
-.bodySub2{
-/*	-webkit-transform: translateZ(-350px) rotateX(90deg);
--moz-transform: translateZ(-350px) rotateX(90deg);
--o-transform: translateZ(-350px) rotateX(90deg);
--ms-transform: translateZ(-350px) rotateX(90deg);
-transform: translateZ(-350px) rotateX(90deg);*/
-}
-.bodySub3{
-/*	-webkit-transform: translateZ(-350px) rotateX(-180deg);
--moz-transform: translateZ(-350px) rotateX(-180deg);
--o-transform: translateZ(-350px) rotateX(-180deg);
--ms-transform: translateZ(-350px) rotateX(-180deg);
-transform: translateZ(-350px) rotateX(-180deg);*/
-}
+	}
+	.section2{
+		overflow: scroll;
+	/*	-webkit-transform: rotateX(-90deg) translateZ(350px);
+	-moz-transform: rotateX(-90deg) translateZ(350px);
+	-o-transform: rotateX(-90deg) translateZ(350px);
+	-ms-transform: rotateX(-90deg) translateZ(350px);
+	transform: rotateX(-90deg) translateZ(350px);*/
+	}
+	.section3{
+	/*		-webkit-transform: rotateX(180deg) translateZ(350px);
+	-moz-transform: rotateX(180deg) translateZ(350px);
+	-o-transform: rotateX(180deg) translateZ(350px);
+	-ms-transform: rotateX(180deg) translateZ(350px);
+	transform: rotateX(180deg) translateZ(350px);*/
+	}
+	/*.bodyContain:hover .section1{
+		-webkit-transform: translateZ(-350px) rotateX(90deg);
+	-moz-transform: translateZ(-350px) rotateX(90deg);
+	-o-transform: translateZ(-350px) rotateX(90deg);
+	-ms-transform: translateZ(-350px) rotateX(90deg);
+	transform: translateZ(-350px) rotateX(90deg);
+	}
+	.bodyContain:hover .section3{
+		-webkit-transform: translateZ(350px) rotateX(0deg);
+	-moz-transform: translateZ(350px) rotateX(0deg);
+	-o-transform: translateZ(350px) rotateX(0deg);
+	-ms-transform: translateZ(350px) rotateX(0deg);
+	transform: translateZ(350px) rotateX(0deg);
+	}*/
 
 
 
 
-/*for adding section 3, create a rectangle box with the 3 sections as sides. have the height of the box container
-to be equal to section 2, largest section of the three, and start it off on the top side (homepage), then rotate*/
+	.bodySub1{
+
+	}
+	.bodySub2{
+	/*	-webkit-transform: translateZ(-350px) rotateX(90deg);
+	-moz-transform: translateZ(-350px) rotateX(90deg);
+	-o-transform: translateZ(-350px) rotateX(90deg);
+	-ms-transform: translateZ(-350px) rotateX(90deg);
+	transform: translateZ(-350px) rotateX(90deg);*/
+	}
+	.bodySub3{
+	/*	-webkit-transform: translateZ(-350px) rotateX(-180deg);
+	-moz-transform: translateZ(-350px) rotateX(-180deg);
+	-o-transform: translateZ(-350px) rotateX(-180deg);
+	-ms-transform: translateZ(-350px) rotateX(-180deg);
+	transform: translateZ(-350px) rotateX(-180deg);*/
+	}
+
+
+
+
+	/*for adding section 3, create a rectangle box with the 3 sections as sides. have the height of the box container
+	to be equal to section 2, largest section of the three, and start it off on the top side (homepage), then rotate*/
 
 
 }
@@ -586,7 +586,10 @@ to be equal to section 2, largest section of the three, and start it off on the 
 		margin-top: 225px;
 	}
 	.section2{
-		height: 1960px;
+		height: 1520px;
+	}
+	.section2Title{
+		font-size: 68px;
 	}
 	.wrgwWrapper:hover{
 		-moz-transform: scale(1);
@@ -622,10 +625,16 @@ to be equal to section 2, largest section of the three, and start it off on the 
 		margin-top: 0px;
 		border-radius: 0%;
 	}
+	.section3Title{
+		font-size: 68px;
+	}
+	.designsContainer{
+		display: none;
+	}
 }
 @media screen and (max-width: 753px){
 	.section2{
-		height: 3070px;
+		height: 2430px;
 	}
 	.websitesWrapper{
 		margin-top: 25px;
@@ -671,7 +680,7 @@ to be equal to section 2, largest section of the three, and start it off on the 
 		width: 73%;
 	}
 	.section2{
-		height: 2860px;
+		height: 2250px;
 	}
 	.section3Container{
 		width: 290px;
@@ -686,7 +695,8 @@ to be equal to section 2, largest section of the three, and start it off on the 
 }
 @media screen and (max-width: 440px){
 	.section1Container{
-		width: 330px;
+		width: 320px;
+		margin-top: 155px;
 	}
 	.section1Title{
 		font-size: 73px;
@@ -712,13 +722,20 @@ to be equal to section 2, largest section of the three, and start it off on the 
 		width: 71%;
 	}
 	.section2Title{
-		font-size: 46px;
+		font-size: 42px;
+	}
+	.section2{
+		height: 2005px;
 	}
 	.designHeader{
 		font-size: 19px;
 	}
 	.siteContainer{
 		width: 310px;
+		margin-top: 10px;
+	}
+	.section3Title{
+		font-size: 50px;
 	}
 }
 
