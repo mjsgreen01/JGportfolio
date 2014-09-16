@@ -65,7 +65,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 			
 		};
 		//rotate to section 1 from section 2
-		if(($('.bodySubContain').hasClass('onSec2')) && ($('.websitesContainer').position().top>(1150)) ) {
+		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()<(5)) ) {
 			$('.bodySubContain').removeClass('bodySub2');
 			$('.bodySubContain').addClass('bodySub1');
 			$(".bodySub1").css({transform: 'rotateX(0deg) translateZ('+negTranZ+'px)'});
