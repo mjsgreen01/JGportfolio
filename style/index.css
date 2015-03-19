@@ -80,7 +80,7 @@ body {
 }
 .section2Container {
     width: 99%;
-    height: 2500px;
+    height: 3000px;
     text-align: center;
     margin: 0 auto;
     margin-top: 110px;
@@ -134,7 +134,7 @@ body {
     transform: scale(.8);
 }
 .designScrollerContainer {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .designPreviewsContainer {
     width: 78%;
@@ -280,12 +280,12 @@ body {
     background-image: url('9.jpg');
 }
 .websitesHeader {
-    width: 315px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 245px;
+    margin-top: 175px;
 }
 .websitesPreviews {
-    margin-top: 80px;
+    margin-top: 30px;
 }
 .siteContainer {
     display: inline-block;
@@ -347,6 +347,9 @@ body {
     background-image: url('37tons.jpg');
     background-position: center -23px;
 }
+.beatWormContain:nth-child(1) .websitesWrapper div {
+    background-image: url('beatworm1.png');
+}
 .websitesText {
     font-weight: 100;
     line-height: 33px;
@@ -387,6 +390,31 @@ body {
 .gitLogo img {
     width: 100%;
 }
+.beatwormSubText{
+    width: 380px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.beatWormContain .websitesWrapper{
+    margin-top: 25px;
+}
+.beatWormContain .designHeader{
+    margin-top: 170px;
+}
+.designSubText{
+    font-weight: 200;
+    font-size: ;
+    margin-top: 30px;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 800px) {
     .bodyContain {
         width: 100%;
