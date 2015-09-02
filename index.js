@@ -55,7 +55,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 	//section2 scroll (overflow:scroll) controls transform from section 2 to section 1 & 3
 	$('.section2').scroll(function () {
 		//rotate to section 3 from section 2
-		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()>(2220)) ) {
+		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()>(1920)) ) {
 
 			$('.bodySubContain').removeClass('bodySub2');
 			$('.bodySubContain').addClass('bodySub3');

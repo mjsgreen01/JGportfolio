@@ -288,6 +288,7 @@ body {
     margin-top: 30px;
 }
 .siteContainer {
+    vertical-align: top;
     display: inline-block;
     width: 370px;
 }
@@ -347,8 +348,17 @@ body {
     background-image: url('37tons.jpg');
     background-position: center -23px;
 }
-.beatWormContain:nth-child(1) .websitesWrapper div {
+.appContain:nth-child(1) .websitesWrapper div {
     background-image: url('beatworm1.png');
+}
+.appContain:nth-child(2) .websitesWrapper div {
+    background-image: url('atuned.png');
+}
+.appContain:nth-child(3) .websitesWrapper div {
+    background-image: url('barCrawler.png');
+}
+.appContain:nth-child(4) .websitesWrapper div {
+    background-image: url('rapReactor.png');
 }
 .websitesText {
     font-weight: 100;
@@ -390,16 +400,19 @@ body {
 .gitLogo img {
     width: 100%;
 }
-.beatwormSubText{
-    width: 380px;
+.appsContainer{
+    margin-top: 170px;
+}
+.appSubText{
+    width: 80%;
     margin: 0 auto;
     margin-top: 10px;
 }
-.beatWormContain .websitesWrapper{
+.appContain .websitesWrapper{
     margin-top: 25px;
 }
-.beatWormContain .designHeader{
-    margin-top: 170px;
+.appContain .designHeader{
+    margin-top: 80px;
 }
 .designSubText{
     font-weight: 200;
