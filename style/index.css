@@ -58,7 +58,7 @@ body {
 }
 .section1Title {
     font-size: 96px;
-    margin-bottom: 16px;
+    margin-bottom: 22px;
     letter-spacing: 13px;
 }
 .section1Title span:nth-child(2) {
@@ -66,7 +66,7 @@ body {
 }
 .section1SubTitle {
     font-size: 28px;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     font-weight: 400;
 }
 .section1SubTitle br {
