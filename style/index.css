@@ -371,6 +371,8 @@ body {
     height: 700px;
     background-color: #c78d4f;
     overflow: hidden;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .section3Container {
     width: 400px;
