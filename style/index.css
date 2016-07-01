@@ -46,6 +46,9 @@ body {
     height: 700px;
     background-color: #233b47;
     overflow: hidden;
+    z-index: 1;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .section1Container {
     width: 800px;
