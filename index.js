@@ -1,6 +1,20 @@
 $(document).ready(function(){
 
+function reloadOnResize () {
+    var large_screen_toggled = $(this).width() > 800 ? true : false;
+    $(window).on("resize", function () {
+        var windowsize = $(this).width();
+        if (windowsize > 800 && !large_screen_toggled) {
+            window.location.reload();
+            large_screen_toggled = true;
+        } else if (windowsize <= 800 && large_screen_toggled) {
+            window.location.reload();
+            large_screen_toggled = false;
+        }
+    });
+}
 
+reloadOnResize();
 
 if ($(window).width()>800) {  //disables 3D transform on window width<800px
 
@@ -36,9 +50,9 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 			$(".bodySub2").css({transform: 'translateZ('+negTranZ+'px) rotateX(90deg)'});
 			$('.bodySubContain').addClass('onSec2');
 			$('.bodySubContain').removeClass('onSec1');
-			
+
 		};
-		
+
 		//rotate to section 2 from section 3
 		if(($('.bodySubContain').hasClass('onSec3')) && ($(window).scrollTop()==0) ) {
 			$('.section2').scrollTop(1510);
@@ -51,7 +65,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 
 
 	});
-	
+
 	//section2 scroll (overflow:scroll) controls transform from section 2 to section 1 & 3
 	$('.section2').scroll(function () {
 		//rotate to section 3 from section 2
@@ -62,7 +76,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 			$(".bodySub3").css({transform: 'translateZ('+negTranZ+'px) rotateX(180deg)'});
 			$('.bodySubContain').addClass('onSec3');
 			$('.bodySubContain').removeClass('onSec2');
-			
+
 		};
 		//rotate to section 1 from section 2
 		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()<(5)) ) {
@@ -93,7 +107,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 	}
 
 	var scrollBack =function() {
-	    
+
 	    if($('.designPreviewsContainer').scrollLeft()>'0'){
 	    $('.designPreviewsContainer').animate({
 	        scrollLeft: amount
@@ -125,9 +139,9 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 
 
 
-	
 
-	
+
+
 
 
 
@@ -149,7 +163,7 @@ if ($(window).width()<=800) {
 	}
 
 	var scrollBack = function() {
-	    
+
 	    if($('.designPreviewsContainer').scrollLeft()>'0'){
 	    $('.designPreviewsContainer').animate({
 	        scrollLeft: amount
@@ -195,7 +209,7 @@ if ($(window).width()<=800) {
 
 
 	//full-view preview of design posters
-	$(".wrgwWrapper").on({click:function(){    
+	$(".wrgwWrapper").on({click:function(){
     	if($(this).hasClass('wrgwWrapperClicked')){
     		$(this).removeClass('wrgwWrapperClicked');
     		$('.designPreviews').removeClass('designPreviewsClicked');
@@ -211,8 +225,8 @@ if ($(window).width()<=800) {
     		$('.designPreviewsContainer').addClass('designPreviewsContainerClicked');
     		if ($(window).width()<800) {
     		var scrolled = $('.designPreviewsContainer').scrollLeft();
-			$('.designPreviewsContainer').scrollLeft(scrolled+120);    	
-			}	
+			$('.designPreviewsContainer').scrollLeft(scrolled+120);
+			}
     	}
 
 		},
