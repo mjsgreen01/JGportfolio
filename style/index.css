@@ -331,38 +331,17 @@ body {
     -webkit-border-radius: 100%;
     border-radius: 100%;
 }
-/*.websitesWrapper div:hover{
-	-moz-transform: scale(.8);
-   -webkit-transform: scale(.8);
-   -o-transform: scale(.8);
-   transform: scale(.8);
-}*/
 
-.siteContainer:nth-child(4) .websitesWrapper div {
-    background-image: url('immigrants.jpg');
-}
-.siteContainer:nth-child(2) .websitesWrapper div {
-    background-image: url('dmj.jpg');
-}
-.siteContainer:nth-child(3) .websitesWrapper div {
-    background-image: url('dee.jpg');
-}
-.siteContainer:nth-child(1) .websitesWrapper div {
-    background-image: url('37tons.jpg');
-    background-position: center -23px;
-}
 .appContain:nth-child(1) .websitesWrapper div {
-    background-image: url('beatworm1.png');
-}
-.appContain:nth-child(2) .websitesWrapper div {
-    background-image: url('atuned.png');
-}
-.appContain:nth-child(3) .websitesWrapper div {
-    background-image: url('barCrawler.png');
-}
-.appContain:nth-child(4) .websitesWrapper div {
     background-image: url('rapReactor.png');
 }
+.appContain:nth-child(2) .websitesWrapper div {
+    background-image: url('beatworm1.png');
+}
+.appContain:nth-child(3) .websitesWrapper div {
+    background-image: url('atuned.png');
+}
+
 .websitesText {
     font-weight: 100;
     line-height: 33px;
