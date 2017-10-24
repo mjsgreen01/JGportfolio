@@ -586,7 +586,7 @@ body {
     .section3Title {
         font-size: 68px;
     }
-    .designsContainer {
+    .designsContainer, .designSubText {
         display: none;
     }
 }

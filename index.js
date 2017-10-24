@@ -55,7 +55,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 
 		//rotate to section 2 from section 3
 		if(($('.bodySubContain').hasClass('onSec3')) && ($(window).scrollTop()==0) ) {
-			$('.section2').scrollTop(1510);
+			$('.section2').scrollTop(210);
 			$('.bodySubContain').removeClass('bodySub3');
 			$('.bodySubContain').addClass('bodySub2');
 			$(".bodySub2").css({transform: 'translateZ('+negTranZ+'px) rotateX(90deg)'});
@@ -69,7 +69,7 @@ if ($(window).width()>800) {  //disables 3D transform on window width<800px
 	//section2 scroll (overflow:scroll) controls transform from section 2 to section 1 & 3
 	$('.section2').scroll(function () {
 		//rotate to section 3 from section 2
-		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()>(1920)) ) {
+		if(($('.bodySubContain').hasClass('onSec2')) && ($('.section2').scrollTop()>(620)) ) {
 
 			$('.bodySubContain').removeClass('bodySub2');
 			$('.bodySubContain').addClass('bodySub3');
